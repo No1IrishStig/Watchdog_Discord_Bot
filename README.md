@@ -52,8 +52,7 @@ Some of our Auto Moderation features include:
 
 <p>Watchdog uses a complex caching methods through the use of Databases. Meaning that your information is kept safe, encrypted and backed up at all times. It also allows for quick access, with low memory usage and millions of queries per minute.<p>
 
-[Installation](#installation) is easy, and you do **NOT** need to know anything about coding! Aside
-from installation and updating.
+[Installation](#installation) is **NOT** easy, and you do need to be advanced within python and sql!
 
 # Installation
 
