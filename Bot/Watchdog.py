@@ -5,6 +5,9 @@ from utils import functions
 
 from discord.ext import commands
 
+# this section is for the new gateway (latest discord.py version)
+intents = discord.Intents.all()
+
 config = functions.fetch("utils/cfg.json")
 
 def prefix(bot, message):
@@ -23,7 +26,7 @@ def prefix(bot, message):
         prefix = "w!"
         return prefix
 
-bot = commands.AutoShardedBot(command_prefix = prefix)
+bot = commands.AutoShardedBot(command_prefix = prefix, intents=intents)
 bot.remove_command('help')
 functions.boot()
 bot.cache = {}
